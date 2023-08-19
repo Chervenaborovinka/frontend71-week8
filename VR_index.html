@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VR</title>
+
+    <style>
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* шапка с лого*/
+.header__nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 2% 2% 0 2%;
+    
+}
+.header__logo {
+    width: 201px;
+    height: 40px;
+    flex-shrink: 0;
+}
+
+.header__button {
+    width: 115px;
+    height: 38px;
+    flex-shrink: 0;
+    border-radius: 100px;
+    background: var(--unnamed, #5222D0);
+    color: #FFF;
+    font-family: Intro ;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+/* контейнер мэйн*/
+.header__main {
+    display: flex;
+    flex-direction: row;
+    
+}
+
+/*текст мэйн */
+.header__main-content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 50px;
+    margin: 5% 0 0 70px;
+}
+
+.title {
+    
+    width: 60vh;
+    display: flex;
+    flex-wrap: wrap;
+    color: var(--unnamed, #000);
+    font-family: Intro ;
+    font-size: 60px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 72px; /* 72px */
+}
+
+.header__text {
+    
+    width: 60vh;
+}
+
+.main__button {
+    width: 270px;
+    height: 84px;
+    flex-shrink: 0;
+    border-radius: 100px;
+    background: var(--unnamed, #5222D0);
+    color: #FFF;
+    font-family: Intro ;
+    font-size: 35px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.header__main-img {
+    margin-left: 50px;
+}
+
+/* нижняя навигация */
+.nav__bottom {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    margin-top: -60px;
+    margin-left: 70px;
+    gap: 20px;
+    color: #5222D0;
+    font-family: Roboto Slab;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 160%; /* 32px */
+}
+
+    </style>
+</head>
+<body>
+<!-- шапка с лого -->
+    <header>
+        <div class="header__nav">
+            <img class="header__logo" src="./assets/images/logo.svg" alt="logo">
+            <button class="header__button">КОРЗИНА
+                <img src="./assets/images/button_ico.svg" alt="...">
+            </button>
+        </div>
+<!-- контейнер мэйн -->
+        <div class="header__main">
+<!-- текст мэйн -->
+            <div class="header__main-content">
+                <h1 class="title">Виртуальная реальность без проводов</h1>
+                <p class="header__text">Лучшее, что случалось с виртуальным миром в реальности. Новый компактный шлем без проводов и дорогих комьютеров.</p>
+                <button class="main__button">КУПИТЬ
+                <img src="./assets/images/button_ico_main.svg" alt="...">
+                </button>
+            </div>
+<!-- img мэйн -->
+            <div class="header__main-img">
+                <img src="./assets/images/main_pic.svg" alt="...">
+            </div>
+        </div>    
+<!-- нижняя навигация -->
+        
+            <nav class="nav__bottom">        
+                <div class="nav-item">Возможности</div>
+                <div class="nav-item">Где купить</div>
+                <div class="nav-item">Доставка</div>
+                <div class="nav-item">Помощь</div>
+            </nav>
+        
+
+
+    </header>
+</body>
+</html>
