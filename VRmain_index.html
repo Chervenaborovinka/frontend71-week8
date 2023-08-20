@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* шапка с лого*/
+.header__nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 2% 2% 0 2%;
+    
+}
+.header__logo {
+    width: 201px;
+    height: 40px;
+    flex-shrink: 0;
+}
+
+.header__button {
+    width: 115px;
+    height: 38px;
+    flex-shrink: 0;
+    border-radius: 100px;
+    background: var(--unnamed, #5222D0);
+    color: #FFF;
+    font-family: Intro ;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+/*текст мэйн */
+.title {
+    display: flex;
+    flex-wrap: wrap;
+    color: var(--unnamed, #000);
+    font-family: Intro ;
+    font-size: 60px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 72px; /* 72px */
+    width: 60vh;
+    margin: 5% 0 0 70px;
+}
+
+.header__main {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 440px 440px 440px;
+    justify-items: center;
+    margin-left: 30px;    
+}
+
+/* 1 ряд карточек */
+.card-first-row {
+    display: grid;
+    width: 440px;
+    height: 550px;
+    justify-content: center;
+    padding-top: 5%;
+}
+
+.card-first-row:nth-child(1) {
+    border: 1px solid #BB2247;
+}
+
+h3 {
+    text-transform: uppercase;
+}
+
+p {
+    width: 365px;
+    color: var(--unnamed, #000);
+    font-family: Roboto Slab;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 160%; /* 32px */
+}
+
+/* 2 ряд карточек */
+.card-second-row{
+    padding-top: 5%;
+    justify-content: center;
+    
+    
+}
+
+.card-second-row:nth-child(4) {
+    border: solid 1px #BB2247;
+    width: 436px;
+    height: 259px;
+    margin-top: 0;
+    padding-top: 5%;
+    margin-left: -30px;
+    padding-left: 50px;
+}
+
+.card-second-row:nth-child(6) {
+    background: var(--unnamed, #EC615B);
+    width: 365px;
+    height: 233px;
+    padding: 15px;
+    color: white;
+    
+}
+/* нижняя навигация */
+.nav__bottom {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    margin-top: -200px;
+    margin-left: 70px;
+    gap: 20px;
+    color: var(--unnamed, #000);
+    font-family: Roboto Slab;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 160%; /* 32px */   
+}
+
+
+    </style>
+</head>
+<body>
+    <header>
+
+<!-- шапка с лого -->
+        <div class="header__nav">
+            <img class="header__logo" src="./assets/images/logo.svg" alt="logo">
+            <button class="header__button">КОРЗИНА
+                <img src="./assets/images/button_ico.svg" alt="...">
+            </button>
+        </div>
+
+        <h1 class="title">Возможности</h1>
+<!-- контейнер мэйн -->
+
+<div class="header__main">
+<!-- карточки ряд 1 -->
+
+<!-- карточка 1 -->
+    <div class="card-first-row">
+        <img class="img" src="./assets/images/Illustration_1.svg" alt="...">
+        <h3>Без проводов</h3>
+        <p>Шлем работает без проводов. Не нужен ни компьютер, ни внешнее питание, ни большое помещение, чтобы расставить трекеры.</p>
+    </div>
+<!-- карточка 2 -->
+    <div class="card-first-row">
+        <img class="img" src="./assets/images/Illustration_2.svg" alt="...">
+        <h3>Без компьютера</h3>
+        <p>Современным VR-шлемам нужен мощный компьютер, чтобы запускать игры. Наш шлем запускает игры из облака, поэтому просто наслаждайтесь.</p>
+    </div>
+<!-- карточка 3 -->
+    <div class="card-first-row">
+        <img class="img" src="./assets/images/Illustration_3.svg" alt="...">
+        <h3>До 10 часов работы</h3>
+        <p>Несмотря на компактность и производительность, шлем может работать до 10 часов — даже, если вы играете в самые ресурсоемкие игры.</p>
+    </div>
+
+<!-- карточки ряд 2-->
+<div class="card-second-row">
+<!-- карточка 1 ряд 2 -->  
+    <h3>Сотни игр</h3>
+    <p>Уже сейчас вам доступно более сотни игр: от высокобюджетных ААА-тайтлов до маленьких независимых проектов. Скоро их станет еще больше.</p>
+</div>
+<!-- карточка 2 ряд 2 --> 
+<div class="card-second-row">
+    <h3>Почти даром</h3>
+    <p>По сравнению с другими VR-шлемами наш стоит гораздо меньше. И вы существенно экономите на мощном компьютере.</p>
+</div>
+<!-- карточка 3 ряд 2 --> 
+<div class="card-second-row">
+    <h3>Новости</h3>
+    <input type="email" id="email" name="email">
+    <br>
+    <button class="header__button">ПОДПИСАТЬСЯ</button>
+</div>
+</div>
+
+<!-- нижняя навигация -->
+<nav class="nav__bottom">        
+    <div class="nav-item">Возможности</div>
+    <div class="nav-item">Где купить</div>
+    <div class="nav-item">Доставка</div>
+    <div class="nav-item">Помощь</div>
+</nav>
+
+</body>
+</html>
